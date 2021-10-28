@@ -1,0 +1,1 @@
+cls && ..\out\build\ULTRA
