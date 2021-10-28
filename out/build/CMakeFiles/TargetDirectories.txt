@@ -1,3 +1,6 @@
 D:/VS code 2/Getting Advanced/out/build/CMakeFiles/rebuild_cache.dir
 D:/VS code 2/Getting Advanced/out/build/CMakeFiles/ULTRA.dir
 D:/VS code 2/Getting Advanced/out/build/CMakeFiles/edit_cache.dir
+D:/VS code 2/Getting Advanced/out/build/src/CMakeFiles/glad.dir
+D:/VS code 2/Getting Advanced/out/build/src/CMakeFiles/edit_cache.dir
+D:/VS code 2/Getting Advanced/out/build/src/CMakeFiles/rebuild_cache.dir

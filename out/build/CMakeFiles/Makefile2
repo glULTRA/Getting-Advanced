@@ -63,21 +63,38 @@ CMAKE_BINARY_DIR = "D:\VS code 2\Getting Advanced\out\build"
 
 # The main recursive "all" target.
 all: CMakeFiles/ULTRA.dir/all
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/ULTRA.dir/clean
+clean: src/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/glad.dir/all
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/glad.dir/clean
+.PHONY : src/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ULTRA.dir
 
 # All Build rule for target.
-CMakeFiles/ULTRA.dir/all:
+CMakeFiles/ULTRA.dir/all: src/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ULTRA.dir\build.make CMakeFiles/ULTRA.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ULTRA.dir\build.make CMakeFiles/ULTRA.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\VS code 2\Getting Advanced\out\build\CMakeFiles" --progress-num=1,2 "Built target ULTRA"
@@ -85,7 +102,7 @@ CMakeFiles/ULTRA.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ULTRA.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VS code 2\Getting Advanced\out\build\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VS code 2\Getting Advanced\out\build\CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ULTRA.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VS code 2\Getting Advanced\out\build\CMakeFiles" 0
 .PHONY : CMakeFiles/ULTRA.dir/rule
@@ -98,6 +115,32 @@ ULTRA: CMakeFiles/ULTRA.dir/rule
 CMakeFiles/ULTRA.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ULTRA.dir\build.make CMakeFiles/ULTRA.dir/clean
 .PHONY : CMakeFiles/ULTRA.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/glad.dir
+
+# All Build rule for target.
+src/CMakeFiles/glad.dir/all:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\glad.dir\build.make src/CMakeFiles/glad.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\glad.dir\build.make src/CMakeFiles/glad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\VS code 2\Getting Advanced\out\build\CMakeFiles" --progress-num=3,4 "Built target glad"
+.PHONY : src/CMakeFiles/glad.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/glad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VS code 2\Getting Advanced\out\build\CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/glad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VS code 2\Getting Advanced\out\build\CMakeFiles" 0
+.PHONY : src/CMakeFiles/glad.dir/rule
+
+# Convenience name for target.
+glad: src/CMakeFiles/glad.dir/rule
+.PHONY : glad
+
+# clean rule for target.
+src/CMakeFiles/glad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\glad.dir\build.make src/CMakeFiles/glad.dir/clean
+.PHONY : src/CMakeFiles/glad.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

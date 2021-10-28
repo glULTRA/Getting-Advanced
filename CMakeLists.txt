@@ -14,4 +14,4 @@ target_link_directories(${PROJECT_NAME}
     PUBLIC src/lib
 )
 
-target_link_libraries(${PROJECT_NAME} glfw3 opengl32 gdi32 shell32 winmm user32)
+target_link_libraries(${PROJECT_NAME} glfw3 glad opengl32 gdi32 shell32 winmm user32)

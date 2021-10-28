@@ -92,6 +92,7 @@ ULTRA_EXTERNAL_OBJECTS =
 
 ULTRA.exe: CMakeFiles/ULTRA.dir/main.cpp.obj
 ULTRA.exe: CMakeFiles/ULTRA.dir/build.make
+ULTRA.exe: src/libglad.a
 ULTRA.exe: CMakeFiles/ULTRA.dir/linklibs.rsp
 ULTRA.exe: CMakeFiles/ULTRA.dir/objects1.rsp
 ULTRA.exe: CMakeFiles/ULTRA.dir/link.txt

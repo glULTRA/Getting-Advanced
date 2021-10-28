@@ -64,16 +64,6 @@ CMAKE_BINARY_DIR = "D:\VS code 2\Getting Advanced\out\build"
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -84,16 +74,26 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VS code 2\Getting Advanced\out\build\CMakeFiles" "D:\VS code 2\Getting Advanced\out\build\\CMakeFiles\progress.marks"
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(CMAKE_COMMAND) -E cmake_progress_start "D:\VS code 2\Getting Advanced\out\build\CMakeFiles" "D:\VS code 2\Getting Advanced\out\build\src\\CMakeFiles\progress.marks"
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\VS code 2\Getting Advanced\out\build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,68 +102,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named ULTRA
+# Convenience name for target.
+src/CMakeFiles/glad.dir/rule:
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/glad.dir/rule
+.PHONY : src/CMakeFiles/glad.dir/rule
 
-# Build rule for target.
-ULTRA: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ULTRA
-.PHONY : ULTRA
-
-# fast build rule for target.
-ULTRA/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ULTRA.dir\build.make CMakeFiles/ULTRA.dir/build
-.PHONY : ULTRA/fast
-
-#=============================================================================
-# Target rules for targets named glad
-
-# Build rule for target.
-glad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glad
+# Convenience name for target.
+glad: src/CMakeFiles/glad.dir/rule
 .PHONY : glad
 
 # fast build rule for target.
 glad/fast:
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\glad.dir\build.make src/CMakeFiles/glad.dir/build
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\glad.dir\build.make src/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+glad.obj: glad.c.obj
+.PHONY : glad.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ULTRA.dir\build.make CMakeFiles/ULTRA.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+glad.c.obj:
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\glad.dir\build.make src/CMakeFiles/glad.dir/glad.c.obj
+.PHONY : glad.c.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+glad.i: glad.c.i
+.PHONY : glad.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ULTRA.dir\build.make CMakeFiles/ULTRA.dir/main.cpp.i
-.PHONY : main.cpp.i
+glad.c.i:
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\glad.dir\build.make src/CMakeFiles/glad.dir/glad.c.i
+.PHONY : glad.c.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+glad.s: glad.c.s
+.PHONY : glad.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ULTRA.dir\build.make CMakeFiles/ULTRA.dir/main.cpp.s
-.PHONY : main.cpp.s
+glad.c.s:
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\glad.dir\build.make src/CMakeFiles/glad.dir/glad.c.s
+.PHONY : glad.c.s
 
 # Help Target
 help:
@@ -173,11 +161,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... ULTRA
 	@echo ... glad
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... glad.obj
+	@echo ... glad.i
+	@echo ... glad.s
 .PHONY : help
 
 
@@ -189,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
