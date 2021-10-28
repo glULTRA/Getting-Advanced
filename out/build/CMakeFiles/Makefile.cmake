@@ -52,4 +52,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ULTRA.dir/DependInfo.cmake"
   "src/CMakeFiles/glad.dir/DependInfo.cmake"
+  "src/CMakeFiles/Shader.dir/DependInfo.cmake"
   )

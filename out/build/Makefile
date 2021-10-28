@@ -141,6 +141,19 @@ glad/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\glad.dir\build.make src/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
+#=============================================================================
+# Target rules for targets named Shader
+
+# Build rule for target.
+Shader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Shader
+.PHONY : Shader
+
+# fast build rule for target.
+Shader/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\Shader.dir\build.make src/CMakeFiles/Shader.dir/build
+.PHONY : Shader/fast
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -173,6 +186,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Shader
 	@echo ... ULTRA
 	@echo ... glad
 	@echo ... main.obj

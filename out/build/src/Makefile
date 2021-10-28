@@ -129,6 +129,44 @@ glad/fast:
 	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\glad.dir\build.make src/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
+# Convenience name for target.
+src/CMakeFiles/Shader.dir/rule:
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/Shader.dir/rule
+.PHONY : src/CMakeFiles/Shader.dir/rule
+
+# Convenience name for target.
+Shader: src/CMakeFiles/Shader.dir/rule
+.PHONY : Shader
+
+# fast build rule for target.
+Shader/fast:
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\Shader.dir\build.make src/CMakeFiles/Shader.dir/build
+.PHONY : Shader/fast
+
+Shader.obj: Shader.cpp.obj
+.PHONY : Shader.obj
+
+# target to build an object file
+Shader.cpp.obj:
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\Shader.dir\build.make src/CMakeFiles/Shader.dir/Shader.cpp.obj
+.PHONY : Shader.cpp.obj
+
+Shader.i: Shader.cpp.i
+.PHONY : Shader.i
+
+# target to preprocess a source file
+Shader.cpp.i:
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\Shader.dir\build.make src/CMakeFiles/Shader.dir/Shader.cpp.i
+.PHONY : Shader.cpp.i
+
+Shader.s: Shader.cpp.s
+.PHONY : Shader.s
+
+# target to generate assembly for a file
+Shader.cpp.s:
+	cd /d "D:\VS code 2\Getting Advanced\out\build" && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\Shader.dir\build.make src/CMakeFiles/Shader.dir/Shader.cpp.s
+.PHONY : Shader.cpp.s
+
 glad.obj: glad.c.obj
 .PHONY : glad.obj
 
@@ -161,7 +199,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Shader
 	@echo ... glad
+	@echo ... Shader.obj
+	@echo ... Shader.i
+	@echo ... Shader.s
 	@echo ... glad.obj
 	@echo ... glad.i
 	@echo ... glad.s

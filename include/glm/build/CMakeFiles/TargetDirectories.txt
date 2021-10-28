@@ -1,0 +1,6 @@
+C:/Frameworks/glm-master/glm/build/CMakeFiles/install/strip.dir
+C:/Frameworks/glm-master/glm/build/CMakeFiles/install/local.dir
+C:/Frameworks/glm-master/glm/build/CMakeFiles/install.dir
+C:/Frameworks/glm-master/glm/build/CMakeFiles/edit_cache.dir
+C:/Frameworks/glm-master/glm/build/CMakeFiles/rebuild_cache.dir
+C:/Frameworks/glm-master/glm/build/CMakeFiles/list_install_components.dir
