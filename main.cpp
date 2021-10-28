@@ -63,9 +63,9 @@ int main()
 	glfwSetScrollCallback(window, mouse_scroll_position);
 
 	// check Glew
-	if (glewInit() != GLEW_OK)
+	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 	{
-		std::cout << "Failed to initialize Glew\n";
+		std::cout << "Failed to initialize Glad\n";
 		glfwTerminate();
 	}
 
@@ -91,7 +91,7 @@ int main()
 	glEnableVertexAttribArray(1);
 
 	/* Shader */
-	Shader myShader("res/Shader/vertexShader.glsl", "res/Shader/fragmentShader.glsl");
+	Shader myShader("../../res/Shader/Shader.vert", "../../res/Shader/Shader.frag");
 
 	/* Game Loop */
 	while (!glfwWindowShouldClose(window))

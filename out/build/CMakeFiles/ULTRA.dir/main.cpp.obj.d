@@ -14,7 +14,6 @@ CMakeFiles/ULTRA.dir/main.cpp.obj: \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/stddef.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/i686-w64-mingw32/include/stddef.h \
  D:/VS\ code\ 2/Getting\ Advanced/include/GLFW/glfw3.h \
- D:/VS\ code\ 2/Getting\ Advanced/include/Shader.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/iostream \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32/bits/c++config.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32/bits/os_defines.h \
@@ -130,6 +129,9 @@ CMakeFiles/ULTRA.dir/main.cpp.obj: \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/istream \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+ C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/cmath \
+ C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/i686-w64-mingw32/include/math.h \
+ D:/VS\ code\ 2/Getting\ Advanced/include/Shader.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/fstream \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32/bits/basic_file.h \
@@ -139,8 +141,6 @@ CMakeFiles/ULTRA.dir/main.cpp.obj: \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/sstream.tcc \
  D:/VS\ code\ 2/Getting\ Advanced/include/glm/glm.hpp \
  D:/VS\ code\ 2/Getting\ Advanced/include/glm/detail/_fixes.hpp \
- C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/cmath \
- C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/i686-w64-mingw32/include/math.h \
  D:/VS\ code\ 2/Getting\ Advanced/include/glm/detail/setup.hpp \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/cassert \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/i686-w64-mingw32/include/assert.h \
